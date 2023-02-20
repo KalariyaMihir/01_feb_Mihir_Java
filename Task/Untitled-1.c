@@ -4,6 +4,6 @@ void main()
 // global variable
 {
 printf("Block no.20,street no.5");
-printf("Gayatri Park Socity, Nr.Marvel Hospital");
-printf("Rajkot Gujarat - 360004");
+printf("\nGayatri Park Socity, Nr.Marvel Hospital");
+printf("\nRajkot Gujarat - 360004");
 }
