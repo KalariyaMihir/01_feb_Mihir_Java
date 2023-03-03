@@ -17,9 +17,9 @@ void main()
     printf("\nMultiplication of Two Numbers :%d",ans);
     div=(float)a/(float)b;
     //ans=a/b;
-    printf("\nDivision of 2 Numbers :%f",div);
+    printf("\nDivision of Two Numbers :%f",div);
     ans=a%b;
-    printf("\nModulo of 2 Numbers :%d",ans);
+    printf("\nModulo of Two Numbers :%d",ans);
     ans=a++;
     printf("\n\bIncrement of a :%d",a);
     ans=b--;
