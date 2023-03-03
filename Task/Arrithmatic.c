@@ -10,11 +10,11 @@ void main()
     scanf("%d%d",&a,&b);
     ans=a+b;
     //printf("2 Number Addition : %d",ans);
-    printf("Addition of 2 Numbers  : %d",c+d);
+    printf("Addition of Two Numbers  : %d",c+d);
     ans=a-b;
-    printf("\nSubstration of 2 Numbers :%d",ans);
+    printf("\nSubstration of Two Numbers :%d",ans);
     ans=a*b;
-    printf("\nMultiplication of 2 Numbers :%d",ans);
+    printf("\nMultiplication of Two Numbers :%d",ans);
     div=(float)a/(float)b;
     //ans=a/b;
     printf("\nDivision of 2 Numbers :%f",div);
