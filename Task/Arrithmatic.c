@@ -23,5 +23,5 @@ void main()
     ans=a++;
     printf("\n\bIncrement of a :%d",a);
     ans=b--;
-    printf("\n\bIncrment of b :%d",b);
+    printf("\n\bDecrement of b :%d",b);
 }
