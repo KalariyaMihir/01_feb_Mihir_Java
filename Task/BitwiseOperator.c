@@ -1,4 +1,4 @@
-//bitwise Operators &,!,|,~,<<,>> 
+//bitwise Operators &,!,|,~,<<,>>,^
 #include<stdio.h>
 void main()
 {
