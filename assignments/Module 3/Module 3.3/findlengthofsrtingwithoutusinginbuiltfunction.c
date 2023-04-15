@@ -6,12 +6,14 @@ void main()
     char word[50];
     int i;
     
+    // Pass Message to user for enter string
     printf("Enter Some Words : ");
+    // store the entered value
     scanf("%s",&word);
+    
+    // loop for count the string
+    for ( i = 0; word[i] != 0; i++); 
 
-    for ( i = 0; word[i] != '\0'; i++);
-    {
-        
-    }
-      printf("Length of %s is : %d ",word,i);
+    // print The number of string
+    printf("Length of %s is : %d Numbers",word,i);
 }
