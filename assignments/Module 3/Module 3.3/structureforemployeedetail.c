@@ -16,7 +16,7 @@ int main()
     printf("Enter Your Employee ID Number :");
     scanf("%d",&obj.empno); 
 
-    printf("\nEnte Your Name :");
+    printf("\nEnter Your Name :");
     scanf("%s",&obj.empname);
 
     printf("\nEnter Your Address :");
