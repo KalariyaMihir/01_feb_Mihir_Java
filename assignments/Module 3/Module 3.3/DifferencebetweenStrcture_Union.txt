@@ -1,0 +1,48 @@
+// WAP to show difference between Structure and Union.
+
+* Difference between Structure & Union :-
+
+Structure ->  struct Keyword used to define a Structure.
+
+          ->  When a Variable is associated with a structure, the compiler allocates the memory for each member.
+              The size of structure is greater than or equal to the sum of sizes of its members.
+          
+          ->  Each member within a structure is assigned unique storage area of location.
+
+          ->  Altering the value of a member will not affected other members of the structure.
+
+          ->  Individual member can be accessed at a time.
+
+          ->  several members of a structure can initialize at once.
+
+
+                           ----------
+
+                           
+Union     ->  union Keyword used to define a Union.
+
+          ->  When a Variable is associated with a union, the compiler allocates the memory by considering the
+              largest memory. so, size of union is equal to the size of largest member.
+
+          ->  Memory Allocated is shared by Individual members of union.
+
+          ->  Altering the value of any of the member will alter other member values.
+
+          ->  Only onr member can be Accessed at a time.
+
+          ->  only the first member of a union can be initialized.
+
+                        
+                           ----------
+
+
+* Similarities between Structure & Union :-
+
+->  Both structure and union are the custom data types that stored different types of data together as a single entity.
+
+->  The structure and union members can be objects of any type, such as other structures,union or arrays.
+
+->  Both Structure or unions can be passed by value to a function and returned to the value by functions.
+    The Argument will need to have the same type as the function parameter.
+
+->  to access members, we use the '.' operator. 
