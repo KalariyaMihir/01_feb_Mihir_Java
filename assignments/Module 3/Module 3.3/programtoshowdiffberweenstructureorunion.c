@@ -21,7 +21,7 @@ printf("%s Your id is %d",st.name,st.id);
 
 // Program of Union
 
-#include <stdio.h>
+/*#include <stdio.h>
 union info
 {
     int pass;
@@ -36,4 +36,4 @@ int main()
     scanf("%s",&object.name);
     
     printf("%d Your Password is stored : %s ",object.pass,object.name);
-}
+}*/
