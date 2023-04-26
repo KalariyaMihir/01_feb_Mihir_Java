@@ -1,0 +1,17 @@
+* what is Deference Between OOP & POP ?
+
+-> OOP :
+
+- OOP Stands for Object Oriented Programming
+- OOP Bottom Up approach
+- OOP is More secure than POP
+- Language that follows OOPs Concept C++,Java,Python..
+
+                ----------
+
+-> POP :
+
+- POP stands for Procedure Oriented Programming
+- POP Follows Top to Bottom approach
+- POP is not secure .
+- Language that follows POP concept C.
