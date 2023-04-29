@@ -1,0 +1,11 @@
+// What is Flowchart?
+
+-> Show Algorithm or Process it shows shows process Step by step.
+
+-> Flowcharts are generally drawn in the early stages of formulating computer solutions.
+
+-> Flowcharts facilitate communication between programmers and business people.
+
+-> These Flowcharts play a vital role in the programming of a problem and are quite helpful in understanding the logic if complicated and lengthy problems.
+
+
