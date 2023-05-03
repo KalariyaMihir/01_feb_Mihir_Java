@@ -1,0 +1,24 @@
+What is DFD? Create a DFD diagram on Flipkart :
+
+
+-> DFD known as a DATA FLOW DIAGRAM
+
+-> A DFD maps out the flow of information for any process or system.
+
+-> It uses defined  symbols like rectangles, circles, and arrows, plus short text labels, to show data inputs, outputs , storage points and the routs between each destination.
+
+-> They can be used to analyze an existing system or model a new one.
+
+-> There are 4 main Symbols in Data Flow Diagram :
+
+        1. Entity
+        2. process
+        3. Data store 
+        4. Data Flow 
+
+-> Rules of DFD : 
+
+        * Each process should have at least one input and an output.
+        * Each data store should have at least one data flow in and one data flow out.
+        * Data stored in a system must go through a process.
+        * All Processes in a DFD go to another Process or a data store.
