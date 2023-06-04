@@ -1,11 +1,13 @@
+// Food Billing System
 #include<stdio.h>
-void main()
-{   
-    char more;
-    int item,quantity,cost,totalbill;
-    
 
-    // Pass Message to show menu to user 
+char more;
+int item,quantity,cost,totalbill;
+
+// show function to show the menu 
+void show()
+{
+        // Pass Message to show menu to user 
     printf("Welcome to Our Restaurant");
     printf("\n\n\t   --Here is Your Menu --");
 
@@ -17,8 +19,12 @@ void main()
     printf("\n\t5. cold Drinks     - 25 rs");
 
     printf("\n\n -- So What Would you like to Have ? --    ");
+}
 
-    // Do while loop for condition check
+// get function for get the user input do the process
+void get()
+{
+     // Do while loop for condition check
     do
     {
 
@@ -79,4 +85,10 @@ void main()
 
     // for print total bill
     printf("\nYour Total Bill is : %d",totalbill);
+}
+
+void main()
+{   
+    show();
+    get();
 }
