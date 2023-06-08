@@ -6,7 +6,7 @@ void main()
     float years;
     printf("Enter Days : ");
     scanf("%f",&days);
-    years=(float)days/(float)365;
+    years=days/365;
     printf("Days Equals to '%f' Years",years);
 
 }
