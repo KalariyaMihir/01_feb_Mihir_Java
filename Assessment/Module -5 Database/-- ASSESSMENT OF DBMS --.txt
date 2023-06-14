@@ -1,0 +1,54 @@
+-- ASSESSMENT OF DBMS --
+
+- CREATE DATABASE `Assessment`
+
+- CREATE TABLE `Nobel_Win`(`Year` int (8),`Subject` char (30),`Winner` char(60), `Country` CHAR (25), `Category` char(20));
+
+- INSERT INTO `nobel_win`(`Year`,`Subject`,`Winner`,`Country`,`Category`)
+
+	VALUES(1970,'Physics','Hannes Alfven','Sweden','Scientist'),
+    	      (1970,'physics','Louis Neel','France','Scientist'),
+   	      (1970,'Chemistry','Luis Federico Leloir','France','Scientist'),
+       	      (1970,'Physiology','Ulf Von Eulter','Sweden','Scientist'),
+       	      (1970,'Physiology','Bernard Katz','Germany','Scientist'),
+       	      (1970,'Literature','Aleksandr Solzhenitsyn','Russiya','Linguist'),
+      	      (1970,'Economics','Paul Samuelson','USA','Economist'),
+       	      (1970,'Physiology','Julius Axelrod','USA','Scientist');
+
+- INSERT INTO `nobel_win`(`Year`,`Subject`,`Winner`,`Country`,`Category`)
+	
+	VALUES(1971,'Physics','Dennis Gabor','Hungary','Scientist'),
+       	      (1971,'Chemistry','Gerhard Herzberg','Germany','Scientist'),
+              (1971,'Peace','Willy Brandt','Germany','Chancellor'),
+              (1971,'Literature','Panblo Neruda','Chile','linguist'),
+              (1971,'Economics','Simon Kuznets','Russia','Economist');
+- INSERT INTO `nobel_win`(`Year`,`Subject`,`Winner`,`Country`,`Category`)
+
+	VALUES(1978,'Peace','Anwar al-Sadat','Egypt','president'),
+    	      (1978,'Peace','Menachem Begin','Israel','Prime Minister');
+
+- INSERT INTO `nobel_win`(`Year`,`Subject`,`Winner`,`Country`,`Category`)
+
+	VALUES (1987,'Chemistry','Donald J.Cram','USA','Scientist'),
+      	       (1987,'Chemistry','Jean-Marie Lehn','France','Scientist'),
+               (1987,'Physiology','Susumu Tonegawa','Japan','Scientist');
+
+- INSERT INTO `nobel_win`(`Year`,`Subject`,`Winner`,`Country`,`Category`)
+
+	VALUES(1994,'Economics','Reinhard Selten','Germany','Economist'),
+     	      (1994,'Peace','Yitzhak Rabin','Israel','Prime Minster'),
+              (1987,'Physics','Johannes Georg Bednorz','Germany','Scientist'),
+              (1987,'Economics','Robert Solow','USA','Economist'),
+              (1994,'Literature','Kenzaburo Oe','Japan','linguist');
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+- SELECT `Year`, `Subject`, `Winner` FROM `nobel_win` WHERE Year = 1970 ;
+
+- SELECT `Year`,`Subject`,`Winner`,`Country` FROM `nobel_win` WHERE Year >= 1965 && Year <= 1975 ;
+
+- SELECT `Year`,`Subject`,`Country`,`Winner` FROM `nobel_win` WHERE `Winner` like 'Louis%';
+
+- SELECT `Year`,`Subject`,`Winner` FROM `nobel_win` WHERE `Subject` NOT LIKE 'P%' ORDER BY Year DESC, Winner ASC;
+
+- SELECT`Year`,`Subject`,`Winner`,`Country`,`Category` FROM `nobel_win` where Year = 1970 ORDER by Subject desc;
