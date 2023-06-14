@@ -7,7 +7,7 @@
 - INSERT INTO `nobel_win`(`Year`,`Subject`,`Winner`,`Country`,`Category`)
 
 	VALUES(1970,'Physics','Hannes Alfven','Sweden','Scientist'),
-    	      (1970,'physics','Louis Neel','France','Scientist'),
+    	      (1970,'Physics','Louis Neel','France','Scientist'),
    	      (1970,'Chemistry','Luis Federico Leloir','France','Scientist'),
        	      (1970,'Physiology','Ulf Von Eulter','Sweden','Scientist'),
        	      (1970,'Physiology','Bernard Katz','Germany','Scientist'),
