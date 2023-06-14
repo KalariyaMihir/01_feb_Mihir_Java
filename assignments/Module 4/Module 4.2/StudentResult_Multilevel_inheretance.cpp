@@ -11,10 +11,14 @@ class student
 {
     public : 
     int roll_no;
+    string name;
 
         // roll function for enter students  roll no 
         void roll()
         {
+        
+        cout<<"Enter Students Name : ";
+        cin>> name;
         cout<<"Enter Students Roll No. :";
         cin>> roll_no;
         }
@@ -27,6 +31,7 @@ class Test : public student
 
         // 8 variables for 8 mark input
         int t1,t2,t3,t4,t5,t6,t7,t8;
+        int pr ;
 
         // test function for get the test mark of student
         void test()
@@ -62,7 +67,10 @@ class Result : public Test
 
             cout<<endl<<"---------------------------------------------------------------------------------------------------------------------------------------------------------";
 
-            cout<<endl<<"\n ------ Roll no."<<roll_no<<"'s Total Mark is : "<<t1+t2+t3+t4+t5+t6+t7+t8<<" ------ ";
+            cout<<endl<<"\n\t\t\t\t\t\t ------> Roll no."<<roll_no<<" "<<name<<"'s Total Mark is : "<<t1+t2+t3+t4+t5+t6+t7+t8<<" <------ ";
+            
+            cout<<endl<<"\n---------------------------------------------------------------------------------------------------------------------------------------------------------";
+
         }
 };
 
