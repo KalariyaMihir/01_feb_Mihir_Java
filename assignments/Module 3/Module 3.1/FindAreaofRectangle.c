@@ -2,11 +2,11 @@
 #include<stdio.h>
 void main()
 {
-    float length;
+    float len;
     float width;
     float area;
     printf("Enter The Length of Rectangle : ");
-    scanf("%f",&length);
+    scanf("%f",&len);
     printf("\nEnter The Width of Rectangle : ");
     scanf("%f",&width);
     area = length * width;
