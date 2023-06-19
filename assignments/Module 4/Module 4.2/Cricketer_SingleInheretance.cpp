@@ -43,9 +43,9 @@
             {
 
                cout<<endl<<"Name of Cricketer is : "<<name<<endl;
-               cout<<"Total run of "<<name<<" is "<<totalruns<<endl;
+               cout<<"Total run of "<<name<<" is : "<<totalruns<<endl;
                cout<<name<<" Played Total "<<matches<<" Matches in his Career."<<endl;
-               cout<<"And Average runs of "<<name<<" is "<<averageruns;
+               cout<<"And Average runs of "<<name<<" is : "<<averageruns;
             }      
    };
 int main()
