@@ -1,4 +1,4 @@
-//WAP to print Fibonacci series up to given numbers
+//WAP to fectorial of given no.
 
 #include<stdio.h>
 int main()
