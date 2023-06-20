@@ -1,0 +1,67 @@
+                                                                         --> Create Table of Emoloyee and Incentive <--
+
+                                                                 --------------------------------------------------------------
+
+EMPLOYEE ->
+
+CREATE TABLE `Employee`(`Employee_id` int (3),`First_Name` varchar (15),`Last_Name` varchar(15),`Salary` int (8),`Joining_Date` varchar (25),`Department` VArchar (20));
+
+                                                                 -------------------------------------------------------------
+
+View - >
+
+CREATE TABLE `View`(`employee_id` int (3),`first_name` varchar (15),`last_name` varchar(15),`salary` int (8),`joining_date` varchar (25),`department` VArchar (20));
+
+                                                                 -------------------------------------------------------------
+
+Trigger - >
+
+DELIMITER $$
+
+CREATE TRIGGER `Trigg` AFTER INSERT ON `employee` FOR EACH ROW
+	
+    BEGIN
+    	
+        INSERT INTO `view` SET `Employee_id` = NEW.employee_id, `First_Name` = NEW.first_name,`Last_Name`= NEW.last_name, `Salary`= NEW.salary,
+			       `Joining_Date` = NEW.joining_date,`Department` = NEW.department;
+                                               
+End $$
+
+                                                                 -------------------------------------------------------------
+
+INSERT INTO `employee`(`Employee_id`,`First_Name`,`Last_Name`,`Salary`,`Joining_Date`,`Department`)
+VALUES(1,'John','Abraham',1000000,'01-JAN-13 / 12.00.00 AM','Banking');
+
+INSERT INTO `employee`(`Employee_id`,`First_Name`,`Last_Name`,`Salary`,`Joining_Date`,`Department`)
+VALUES(2,'Michael','Clarke',800000,'01-JAN-13 / 12.00.00 AM', 'Insurance'),
+	  (3,'Roy','Thomas',700000,'01-FEB-13 / 12.00.00 AM','Banking'),
+      (4,'Tom','Jose',600000,'01-FEB-13 / 12.00.00 AM','Insurance'),
+      (5,'Jerry','Pinto',650000,'01-FEB-13 / 12.00.00 AM','Insurance'),
+      (6,'Philip','Mathew',750000,'01-JAN-13 / 12.00.00 AM','Services'),
+      (7,'TestName1',123,650000,'01-JAN-13 / 12.00.00 AM','Services'),
+      (8,'TestName2','Lname%',600000,'01-FEB-13 / 12.00.00 AM','Insurance');
+
+                                                                  -------------------------------------------------------------
+
+CREATE TABLE `Incentive`(`Employee_ref_id` int (3),`Incentive_Date` varchar (15),`Incentive_Amount` int(5));
+
+- ALTER TABLE `incentive` ADD FOREIGN KEY(`Employee_ref_id`) REFERENCES `employee` (`Employee_Id`);
+- INSERT INTO `incentive` (`Employee_ref_id`,`Incentive_Date`,`Incentive_Amount`)
+  VALUES(1,'01-FEB-13',5000),
+	(2,'01-FEB-13',3000),
+        (3,'01-FEB-13',4000),
+        (1,'01-JAN-13',4500),
+        (2,'01-JAN-13',3500);
+
+                                                                  -------------------------------------------------------------
+  
+                                                                                  GIVEN QUERYS TO PERFORM
+
+1.) SELECT `First_Name`,`Joining_Date`,`Salary` FROM`employee` WHERE `First_Name` = 'John';
+2.) SELECT * FROM `employee` ORDER BY `First_Name` asc , `Salary` DESC;
+3.) SELECT * FROM `employee` WHERE `First_Name` LIKE 'J%';
+4.) SELECT * FROM `employee` ORDER BY `Department` ASC ,`Salary` DESC; 
+5.) SELECT `employee`.`First_Name`, `incentive`.`Incentive_Amount`
+    FROM `employee`
+    INNER JOIN `incentive` ON `employee`.`Employee_id` = `incentive`.`Employee_ref_id`
+    WHERE `incentive`.`Incentive_Amount`>3000;

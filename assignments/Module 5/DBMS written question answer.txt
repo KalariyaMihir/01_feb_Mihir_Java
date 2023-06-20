@@ -1,0 +1,105 @@
+1) What do you understand by DataBase ?
+
+-> Data Base is the collection of data or information.
+	- For Manage those data there is DBMS. 
+	- DBMS Stand for "DATABASE MANAGEMENT SYSTEM".
+	- It used to store data.
+	- There are Two types of DBMS -> 1. DBMS  - Database Management System
+					2. RDBMS - Realtional Database Management System
+
+-----------
+
+2) What is Normalization ?
+
+-> - Redundancy in relation may cause insertion,deletion and updation anomalies.
+   - Normalization is the process of minimizing redunduncy from a relation or set of relations in database.	
+   - There are 4 types of normalization or 4 types to sort the data.
+	1.) FNF  : First Normal Form 
+	2.) SNF  : Second Normal Form 
+	3.) TNF  : Third Normal Form 
+	4.) BCNF : Boyce and Code Normal Form 
+
+-----------
+
+3) What is Difference between DBMS and RDBMS ?
+
+-> DBMS :- DBMS stands for Database Management System. it used to Sort Data 
+-> RDBMs :- RDBMS stands for Relational Database Management System .it used to sort realtional data in database.
+
+-----------
+
+4) What is MF Cod Rule of RDBMS Systems ?
+
+-> 
+
+-----------
+5) What do you understand By Data Redundancy ?
+
+-> - Data Redundancy means same data multiple times / Repeted data in one database.
+   - It consume more size and create complexity in database.
+ 
+-----------
+
+
+6) What is DDL Interpreter ?
+
+-> DDL Stands for Data Defination Language.
+-> DDL Interpreter are commands of DDL : Create, Alter, Drop
+
+	Create : Used to create new database ,tabel or any other objects in Database.
+	Alter  : It Used to modify the created data or enterd data.
+	Drop   : It used to drop(delete) the whole table or data base.
+
+-----------
+
+7) What is DML Compiler in SQL ?
+ 
+-> DML Stands for Data Manipulation Language 
+-> DML compiler translate statements in a query language.
+-> Statements like Insert,Update,Delete.
+
+-----------
+
+8) What is SQL Key Constraints writing an Example of SQL Key Constraints ?
+
+-> - Constraints key used to put Different types of rules in data or table.
+   - There are Three Types of keys : 1.) Primary Key
+						 2.) Unique Key
+						 3.) Foreign Key 
+
+	1.) Primary key : - Primary key is column of tbale which uniquely identifies each rows.
+				- We can use primary key once in table.
+				- Primary key doesn't accept same value or null value.
+				- To give Auto_increment or foreign key Primary key is compulsory.
+				- QUERY : Alter table `tablename` add Primary keys (`column name`);
+
+	2.) Unique Key  : - Unique Key constraints also identifies uniquely in table.
+				- we can use unique Multiple time.
+				- Unique key doesn't accept same value but accept 1 null value.
+				- QUERY : Alter Table `tablename` add Unique keys (`column name`);
+
+	3.) Foreign key : - Foreign key used to give reference from one table to another table. 
+				- one tables primeery key field is added to a related many tables in order to create the common field which reletes the two table,
+				  it is called a foregin key in the many table.
+				- QUERY : Alter Table `tablename2` add Foreign key (`Columnname2`) references `reference table name` (`column name`);
+
+-----------
+
+9) What is save Point ? How to create a save Point write a Query ?
+
+-> - It used to save transaction with save point with spacific name.
+   - in case of error we can undo the Procedures up to save point.
+   - QUERY : Savepoint savepointname;
+
+-----------
+
+10) What is trigger and how to create a Trigger in SQL ?
+
+-> - Trigger is a special event in databas which invokes automatically whenever a given event occurs
+   - QUERY : create Trigger trigger name
+	     (after|before)(insert|update|delete)
+	     on table name for each row 
+	     begin
+
+		----code----
+	     end;

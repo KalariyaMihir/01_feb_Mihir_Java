@@ -1,0 +1,20 @@
+                                                                        -- Table Detail --
+
+
+
+
+	- Create Table `Details`(`First Name` Char (10), `Last Name` Char (10) , `Address` Varchar (20) , `City` Char (10),`Age` int (7));
+
+	- Insert Into `Deatail`(`First Name` , `Last Name` , `Address` , `City`,`Age`) 
+	  Values ('Tony','Stark','10880 Malibu Point','New York','50'),
+		 ('Bruce','Wayne',1007 Mountain Drive','gotham','48');
+	- INSERT INTO `details`(`First Name`,`Last Name`,`Address`,`City`,`Age`)
+	  VALUES ('Diana','Themyscira','Paradise Island','Amazons',5000),
+	 	 ('Steve','Rogers','569 Leaman Place','New York',104),
+       	         ('Micky','Mouse','105 Town Square','Mouseton',93),
+      	         ('Donald','Duck','1313 13th Street','DuckBurg',89);
+
+                                      
+
+
+                                                                        ------------------    

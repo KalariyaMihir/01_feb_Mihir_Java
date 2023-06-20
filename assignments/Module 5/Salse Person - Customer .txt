@@ -1,0 +1,52 @@
+										   SALSEPERSON & CUSTOMER
+
+								-------------------------------------------------------------
+--> Table of SalsePerson :
+
+	- Create Table `saleperson`(`(PK)S_No` int (4),`SP_Name` char (10),`City` Char(10),`Comm` Varchar (5));
+	- Alter Table `salseperson` add primary key (`(PK)S_NO`);
+	- Insert into `salseperson`(`(PK)S_No`,`SP_Name`,`City`,`Comm`)
+	  Values(1001,'Robert','London','.12');
+	- Alter Table `salseperson` Change `(PK)S_No` `(PK)S_No`int (4) Auto_Increment;	
+	- Insert Into `salesperson`(`(PK)S_No)`,`SP_Name`,`City`,`Comm`)s
+	  values('','Jordan','San Jose',.13),
+	  values('','Mark','London',.11),
+	  Values('','Joseph',BArcelona',.15),
+	  Values('','Alex','New York',.1);
+
+								-------------------------------------------------------------
+
+--> Table of Customer :
+	
+	- CREATE TABLE `Customer`(`(PK)C_No` INT (3),`C_Name` char (10),`City` CHAR (10),`Rating`int(3),`(FK)S_No` int (4));
+	- ALTER TABLE `customer` ADD PRIMARY KEY (`(PK)C_No`);
+	- INSERT INTO `customer`(`(PK)C_No`,`C_Name`,`City`,`Rating`,`(FK)S_No`)
+	  VALUES(201,'Hoffman','London',100,1001);
+	- ALTER TABLE `customer` CHANGE `(PK)C_No` `(PK)C_No`INT (3)AUTO_INCREMENT;
+	- INSERT INTO`customer`(`(PK)C_No`,`C_Name`,`City`,`Rating`,`(FK)S_No`)
+	  VALUES ('','Giovanne','Roe',200,1003),
+	   	   ('','Liu','San Jose',300,1002),
+	         ('','Grass','Barcelona',100,1002);
+	- INSERT INTO `customer`(`(PK)C_No`,`C_Name`,`City`,`Rating`,`(FK)S_No`)
+	  VALUES('','Clemens','London',300,1005),
+	  	  ('','Pereira','Roe',100,1004);
+	- Alter Table `customer` Add Foreign Key (`S_NO`) References `salseperson` (`(PK)S_No`);
+	
+	- ALTER TABLE `customer` ADD COLUMN `Order Rate` INT (4) AFTER `S_NO`;
+	- UPDATE `customer` SET `Order Rate` = '3213' WHERE `customer`.`(PK)C_No` = 201;
+	- UPDATE `customer` SET `Order Rate` = 664 WHERE `customer`.`(PK)C_No`= 202;
+	- UPDATE `customer` SET `Order Rate` = 554 WHERE `customer`.`(PK)C_No` = 203;
+	- UPDATE `customer` SET `Order Rate` = 225 WHERE `customer`.`(PK)C_No` = 204;
+	- UPDATE `customer` SET `Order Rate` = 354 WHERE `customer`.`(PK)C_No` = 205;
+	- UPDATE `customer` SET `Order Rate` = 1118 WHERE `customer`.`(PK)C_No`= 206 ; 
+
+								-------------------------------------------------------------
+
+								      		  GIVEN QUERYS TO PERFORM
+
+	  > a) SELECT * FROM `customer` WHERE `Order Rate` > 1000; 
+	  > b) SELECT`City`,`Comm` FROM `salseperson` WHERE City = 'London' && Comm = .12;
+	  > c) SELECT `City` FROM `salseperson` WHERE City = 'Barcelona' || City = 'London';
+	  > d) SELECT `Comm` FROM `salseperson` WHERE Comm > 0.10 && Comm < 0.12;
+	  > e) SELECT `Rating` `City` FROM `customer` WHERE Rating <= 100 && City = 'Rome';
+

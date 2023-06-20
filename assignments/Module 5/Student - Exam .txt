@@ -1,0 +1,21 @@
+1. Create Table Name : Student and Exam
+
+	- Create Databse `Assignment`;	
+	- Create Table `Student` (`Roll_No` int (3), `Name` varchar(10), `Branch` VArcahr(10));
+	- insert into `Student`(`Roll_No`,`Name`,`Branch`) Values (01,'Mihir','CE');
+	- Alter Table `Student` Add Primary Key (`Roll_No`);
+	- Alter Table `Student` Change `Roll_No` `Roll_No` int (3) Auto_Increment;
+	- insert into `Student`(`Roll_No`,`Name`,`Branch`) Values (02,'Hitesh','BCA'),(03,'Bhagirath','BcA'),(04,'Raj','BA');
+	
+
+
+	                                                               ---- Second Table " Marks " For Forigen Key ----
+
+
+
+	- Create Table `Exam` (`Roll_No` int (3), `Subject_Code` Varchar (7),`Marks` int (3), `P_Code` char (5));
+	- Insert Into `Exam` (`Roll_No`,`subject_Code`,`Marks`,`P_Code`) Values (01,'CS-11',68,'CS'),(01,'CS-12',52,'CS'),(02,'BCA-46',54,'BCA'),(02,'BCA-59',65,'BCA');
+	- Alter Table `Exam` add Foreign Key (`Roll_No`) References `Student` (`Roll_no`);
+	- Insert Into `Exam` (`Roll_No`,`subject_Code`,`Marks`,`P_Code`) Values (03,'BCA-46',54,'BCA'),(03,'BCA-59',52,'BCA');
+	- INSERT INTO `exam` (`Roll_No`,`Subject_Code`,`Marks`,`P_Code`) VALUES(04,'BA-21',61,'BA'),(04,'BA-26',47,'BA'); 
+	
