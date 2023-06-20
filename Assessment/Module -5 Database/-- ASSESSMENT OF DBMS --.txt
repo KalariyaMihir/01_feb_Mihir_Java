@@ -1,5 +1,5 @@
 -- ASSESSMENT OF DBMS --
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 - CREATE DATABASE `Assessment`
 
 - CREATE TABLE `Nobel_Win`(`Year` int (8),`Subject` char (30),`Winner` char(60), `Country` CHAR (25), `Category` char(20));
