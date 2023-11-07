@@ -7,11 +7,19 @@
 
    -There is mainly five types of software
 
-      1) System Software
-      2) Application Spftware
-      3) Programming Software
-      4) Driver Software
-      5) Middleware Software
+      1) System Software :  System Sfotware are designed to run a computers programs and hardware. It controls the operations of the computer  hardware and provides an platform to all the types of software to work in. -> Example of System Software is Operating System.
+
+
+      2) Application Spftware :  Application Software is a computer software package that performs a specific function for a user, or in some cases, for another application. -> Example of Application software is Web Browsers, Graphic Spftware, Software Developments tools etc...
+
+
+      3) Programming Software : Programming software's are used by programers to write codes in it. -> Example of Programming Software is Compilers, Assemblers, Debuggers and Intrerpreters.
+
+
+      4) Driver Software : Driver Software also known as a Device Drivers. DEvice Drivers control the device and peripheral connected to a computer, enabling the, to perform their specific tasks. every device that is connected to a computer needs at least one device driver to function. -> Example of Driver Software is Key-Board, Mouse, Printer, USB etc... all this devices need an saperate software to wrok.
+
+ 
+      5) Middleware Software :  Middleware software is a mediater software between application and software or between two different kinds of application software. as a example middleware enables MS Windows to talk to excel and word.
 
 3. What is SDLC? Explain each phaser of SDLE.
 
